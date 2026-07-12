@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estimation immobilière gratuite | Johanna Camacho - Conseillère iad, Val d'Essonne</title>
+<meta name="description" content="Estimez gratuitement votre bien à Itteville, Vert-le-Grand, Vert-le-Petit, Ballancourt-sur-Essonne ou La Ferté-Alais avec Johanna Camacho, conseillère iad indépendante.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Estimation gratuite de votre bien avec Johanna Camacho">
+<meta property="og:description" content="Estimation gratuite et sans engagement par une experte locale du Val d'Essonne. Réponse détaillée sous 24h.">
+<meta property="og:image" content="itteville/images/johanna.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-XXXXXXXXX');
+</script>
+-->
+
+<style>
+  :root{
+    --iad-blue:#0B5FFF; --iad-blue-2:#2E7BFF; --iad-navy:#071B42; --iad-navy-2:#0D2A5C;
+    --iad-tint:#EAF2FF; --iad-tint-2:#F5F9FF; --gold:#F2A93B; --gold-2:#F7C978;
+    --ink:#0B1220; --ink-soft:#4A5568; --paper:#FFFFFF; --line:#E1E9F7;
+    --radius:18px; --shadow:0 20px 50px -20px rgba(11,31,90,.35);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,h4{font-family:'Sora',sans-serif;letter-spacing:-0.02em;}
+  a{text-decoration:none;color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+  .eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--iad-blue);}
+  @media (prefers-reduced-motion: reduce){*{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;}}
+  header{position:sticky;top:0;z-index:500;background:rgba(255,255,255,0.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;}
+  .logo{display:flex;align-items:center;gap:10px;font-family:'Sora',sans-serif;font-weight:800;font-size:1.05rem;color:var(--iad-navy);}
+  .logo small{display:block;font-family:'Inter',sans-serif;font-weight:600;font-size:.62rem;letter-spacing:.08em;color:var(--ink-soft);}
+  .logo-dot{width:10px;height:10px;border-radius:50%;background:var(--iad-blue);}
+  .links{display:flex;gap:26px;font-size:.88rem;font-weight:600;color:var(--ink-soft);}
+  .links a:hover{color:var(--iad-blue);}
+  .nav-phone{display:flex;align-items:center;gap:8px;background:var(--iad-blue);color:#fff;padding:9px 18px;border-radius:30px;font-size:.85rem;font-weight:700;}
+  @media (max-width:860px){ .links{display:none;} }
+
+  .hero{background:linear-gradient(160deg, var(--iad-navy) 0%, var(--iad-navy-2) 55%, #123a8a 100%);color:#fff;padding:56px 0 0;position:relative;overflow:hidden;}
+  .hero::before{content:"";position:absolute;top:-30%;right:-8%;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle, rgba(46,123,255,.35), transparent 70%);}
+  .trust-strip{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px;position:relative;z-index:1;}
+  .trust-pill{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.16);padding:7px 14px;border-radius:30px;font-size:.76rem;font-weight:600;color:rgba(255,255,255,.9);}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:start;position:relative;z-index:1;padding-bottom:64px;}
+  .hero .eyebrow{color:var(--gold-2);}
+  .hero h1{font-size:clamp(32px,4.2vw,50px);line-height:1.1;max-width:560px;margin-top:16px;}
+  .hero h1 em{font-style:italic;color:var(--gold-2);}
+  .hero p.lead{margin-top:20px;font-size:16.5px;color:rgba(255,255,255,.78);max-width:460px;}
+  .stat-row{display:flex;gap:34px;margin-top:38px;flex-wrap:wrap;}
+  .stat .num{font-family:'Sora',sans-serif;font-weight:800;font-size:24px;color:var(--gold-2);}
+  .stat .label{font-size:12px;color:rgba(255,255,255,.65);margin-top:2px;max-width:140px;}
+
+  .lead-card{background:#fff;color:var(--ink);border-radius:var(--radius);padding:32px 30px 28px;box-shadow:var(--shadow);}
+  .lead-card-label{font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--iad-blue);margin-bottom:6px;}
+  .lead-card h2{font-size:21px;margin-bottom:20px;color:var(--iad-navy);}
+  .field{margin-bottom:15px;}
+  .field label{display:block;font-size:12.5px;font-weight:600;margin-bottom:6px;color:var(--iad-navy);}
+  .field input, .field select{width:100%;padding:11px 13px;border:1.5px solid var(--line);border-radius:10px;font-family:'Inter',sans-serif;font-size:14.5px;background:var(--iad-tint-2);color:var(--ink);}
+  .field input:focus, .field select:focus{outline:none;border-color:var(--iad-blue);background:#fff;}
+  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .consent{display:flex;gap:9px;align-items:flex-start;margin:16px 0 18px;}
+  .consent input{margin-top:3px;width:15px;height:15px;flex-shrink:0;}
+  .consent label{font-size:11.8px;color:var(--ink-soft);line-height:1.45;}
+  .btn-submit{width:100%;background:var(--iad-blue);color:#fff;border:none;padding:14px;font-family:'Inter',sans-serif;font-weight:700;font-size:14.5px;border-radius:10px;cursor:pointer;transition:background .15s ease;}
+  .btn-submit:hover{background:#0a52dd;}
+  .microcopy{text-align:center;font-size:11.5px;color:#94A3B8;margin-top:12px;}
+  .success-state{display:none;text-align:center;padding:20px 0;}
+  .success-state.active{display:block;}
+  .success-state h3{color:var(--iad-navy);font-size:19px;margin-bottom:8px;}
+  .success-state p{font-size:13.5px;color:var(--ink-soft);}
+
+  .marquee-band{background:var(--gold);overflow:hidden;white-space:nowrap;padding:11px 0;position:relative;z-index:1;}
+  .marquee-track{display:inline-flex;gap:36px;animation:marqueeScroll 32s linear infinite;}
+  .marquee-track span{font-family:'Sora',sans-serif;font-weight:700;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--iad-navy);display:inline-flex;align-items:center;gap:36px;}
+  .marquee-track span::after{content:"•";margin-left:36px;color:rgba(7,27,66,.4);}
+  @keyframes marqueeScroll{ 0%{transform:translateX(0);} 100%{transform:translateX(-50%);} }
+
+  section{padding:76px 0;}
+  .section-tint{background:var(--iad-tint-2);}
+  .kicker{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--iad-blue);font-weight:700;margin-bottom:12px;}
+  h2.section-title{font-size:clamp(25px,3vw,33px);max-width:620px;color:var(--iad-navy);}
+
+  .villes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:44px;}
+  .ville-card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:0 14px 30px -18px rgba(11,31,90,.28);display:flex;flex-direction:column;}
+  .ville-img{height:180px;background-size:cover;background-position:center;background-color:var(--iad-tint);}
+  .ville-body{padding:20px 22px 24px;display:flex;flex-direction:column;flex:1;}
+  .ville-body h3{font-size:18px;color:var(--iad-navy);margin-bottom:8px;}
+  .ville-body p{font-size:13.5px;color:var(--ink-soft);flex:1;margin-bottom:16px;}
+  .ville-cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--iad-tint);color:var(--iad-blue);padding:11px 16px;border-radius:10px;font-size:13.5px;font-weight:700;transition:background .15s ease;}
+  .ville-card:hover .ville-cta{background:var(--iad-blue);color:#fff;}
+  @media (max-width:860px){ .villes-grid{grid-template-columns:1fr;} }
+
+  .conseiller-wrap{display:grid;grid-template-columns:200px 1fr;gap:40px;align-items:center;}
+  .conseiller-photo{width:200px;height:200px;border-radius:50%;background-size:cover;background-position:center;background-color:var(--iad-tint);border:4px solid var(--gold);flex-shrink:0;}
+  .conseiller-liens{display:flex;gap:14px;margin-top:22px;flex-wrap:wrap;}
+  .btn-outline{display:inline-flex;align-items:center;border:1.5px solid var(--iad-navy);color:var(--iad-navy);padding:11px 22px;border-radius:10px;font-size:14px;font-weight:600;}
+  .btn-outline:hover{background:var(--iad-navy);color:#fff;}
+  .btn-whatsapp{display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;padding:11px 22px;border-radius:10px;font-size:14px;font-weight:600;}
+  .btn-whatsapp:hover{filter:brightness(0.94);}
+  @media (max-width:860px){ .conseiller-wrap{grid-template-columns:1fr;text-align:center;} .conseiller-photo{margin:0 auto;} .conseiller-liens{justify-content:center;} }
+
+  .testimonial{background:var(--iad-navy);color:#fff;padding:52px 0;}
+  .testimonial-carousel{position:relative;min-height:170px;}
+  .testimonial-slide{position:absolute;inset:0;opacity:0;transform:translateX(20px);transition:opacity .6s ease, transform .6s ease;pointer-events:none;}
+  .testimonial-slide.is-active{opacity:1;transform:translateX(0);pointer-events:auto;position:relative;}
+  .testimonial-dots{display:flex;gap:8px;margin-top:26px;}
+  .testimonial-dots button{width:9px;height:9px;border-radius:50%;border:none;background:rgba(255,255,255,.3);cursor:pointer;padding:0;}
+  .testimonial-dots button.is-active{background:var(--gold-2);}
+  .testimonial-stars{color:var(--gold-2);font-size:14px;margin-bottom:10px;letter-spacing:2px;}
+  .testimonial blockquote{font-family:'Sora',sans-serif;font-size:clamp(16px,1.9vw,19px);font-weight:500;line-height:1.5;}
+  .testimonial cite{display:block;margin-top:18px;font-style:normal;font-size:12.5px;color:var(--gold-2);}
+  .testimonial-note{font-size:11.5px;color:rgba(255,255,255,.4);margin-top:24px;}
+  @media (max-width:860px){ .testimonial-carousel{min-height:230px;} }
+
+  .final-cta{background:linear-gradient(135deg, var(--iad-navy), #0f2f70);color:#fff;padding:68px 0;text-align:center;}
+  .final-cta h2{color:#fff;font-size:clamp(25px,3.4vw,34px);margin-bottom:12px;}
+  .final-cta p{color:rgba(255,255,255,.75);margin-bottom:28px;}
+  .btn-final{background:var(--gold);color:var(--iad-navy);border:none;padding:15px 34px;font-weight:700;font-size:15px;border-radius:10px;cursor:pointer;}
+  .btn-final:hover{background:var(--gold-2);}
+
+  footer{background:var(--iad-navy);color:rgba(255,255,255,.55);padding:36px 0;font-size:12.5px;}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;}
+  footer a{color:rgba(255,255,255,.75);}
+  .footer-zone{margin-top:6px;font-size:11.8px;color:rgba(255,255,255,.42);max-width:620px;}
+
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.is-visible{opacity:1;transform:translateY(0);}
+  .sticky-cta{position:fixed;top:0;left:0;right:0;background:var(--iad-navy);color:#fff;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;transform:translateY(-110%);transition:transform .3s ease;z-index:998;}
+  .sticky-cta.is-visible{transform:translateY(0);}
+  .sticky-cta span{font-size:13.5px;font-weight:600;}
+  .sticky-cta button{background:var(--gold);color:var(--iad-navy);border:none;padding:9px 18px;border-radius:8px;font-weight:700;font-size:13px;cursor:pointer;white-space:nowrap;}
+  .whatsapp-float{position:fixed;bottom:22px;right:22px;background:#25D366;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px -6px rgba(0,0,0,.4);z-index:999;}
+  .whatsapp-float:hover{transform:scale(1.07);}
+  .whatsapp-float svg{width:30px;height:30px;fill:#fff;}
+  .whatsapp-float::before{content:"";position:absolute;inset:-6px;border-radius:50%;background:#25D366;opacity:.5;animation:pulse-ring 2.2s ease-out infinite;}
+  .call-float{position:fixed;bottom:22px;left:22px;background:var(--iad-navy);width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px -6px rgba(0,0,0,.4);z-index:999;}
+  .call-float:hover{transform:scale(1.07);}
+  .call-float svg{width:26px;height:26px;fill:#fff;}
+  .call-float::before{content:"";position:absolute;inset:-6px;border-radius:50%;background:var(--gold);opacity:.45;animation:pulse-ring 2.2s ease-out infinite;animation-delay:1.1s;}
+  @keyframes pulse-ring{0%{transform:scale(.85);opacity:.5;}80%{transform:scale(1.5);opacity:0;}100%{opacity:0;}}
+
+  @media (max-width:860px){
+    .hero-grid{grid-template-columns:1fr;}
+    .field-row{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<div class="sticky-cta" id="stickyCta">
+  <span>Estimation gratuite de votre bien</span>
+  <button onclick="document.querySelector('.lead-card').scrollIntoView({behavior:'smooth'});">Estimer mon bien</button>
+</div>
+
+<header>
+  <div class="nav wrap">
+    <div class="logo">
+      <span class="logo-dot"></span>
+      <div>iad <small>JOHANNA CAMACHO · CONSEILLÈRE</small></div>
+    </div>
+    <nav class="links">
+      <a href="#estimation">Estimation</a>
+      <a href="#villes">Mes secteurs</a>
+      <a href="#conseillere">À propos</a>
+    </nav>
+    <a href="tel:+33662239938" class="nav-phone">06 62 23 99 38</a>
+  </div>
+</header>
+
+<section class="hero" id="estimation">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="trust-strip">
+        <span class="trust-pill">✔ Conseillère iad France</span>
+        <span class="trust-pill">✔ Réponse sous 24h</span>
+        <span class="trust-pill">✔ Estimation 100% gratuite</span>
+      </div>
+      <div class="eyebrow">Estimation immobilière · Val d'Essonne</div>
+      <h1>Combien vaut vraiment <em>votre bien</em>&nbsp;?</h1>
+      <p class="lead">Une estimation gratuite et sans engagement, réalisée par une experte du marché local — pas par un algorithme. Réponse détaillée sous 24h.</p>
+      <div class="stat-row">
+        <div class="stat"><div class="num">24h</div><div class="label">délai de réponse moyen</div></div>
+        <div class="stat"><div class="num">0€</div><div class="label">gratuit, sans obligation</div></div>
+        <div class="stat"><div class="num">5</div><div class="label">communes couvertes en Val d'Essonne</div></div>
+      </div>
+    </div>
+
+    <div class="lead-card">
+      <div class="lead-card-label">Estimation gratuite</div>
+      <h2>Votre bien en 2 minutes</h2>
+
+      <form id="leadForm">
+        <div class="field">
+          <label for="nom">Nom et prénom</label>
+          <input type="text" id="nom" placeholder="Jean Dupont" required>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="ville">Ville</label>
+            <select id="ville" required>
+              <option value="">Choisir...</option>
+              <option>Itteville</option>
+              <option>Vert-le-Grand</option>
+              <option>Vert-le-Petit</option>
+              <option>Ballancourt-sur-Essonne</option>
+              <option>La Ferté-Alais</option>
+              <option>Autre commune à proximité</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="type">Type de bien</label>
+            <select id="type" required>
+              <option value="">Choisir...</option>
+              <option>Maison</option>
+              <option>Appartement</option>
+              <option>Terrain</option>
+              <option>Autre</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="adresse">Adresse du bien</label>
+          <input type="text" id="adresse" placeholder="N°, rue" required>
+        </div>
+        <div class="field">
+          <label for="delai">Délai de vente</label>
+          <select id="delai" required>
+            <option value="">Choisir...</option>
+            <option>Moins de 3 mois</option>
+            <option>3 à 6 mois</option>
+            <option>6 mois et plus</option>
+            <option>Je m'informe seulement</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="tel">Téléphone</label>
+          <input type="tel" id="tel" placeholder="06 12 34 56 78" required>
+        </div>
+
+        <div class="consent">
+          <input type="checkbox" id="consent" required>
+          <label for="consent">J'accepte d'être contacté(e) par Johanna Camacho (iad France) — ou un professionnel partenaire de son réseau — pour recevoir mon estimation. Voir notre <a href="mentions-legales.html" style="color:var(--iad-blue);">politique de confidentialité</a>.</label>
+        </div>
+
+        <button type="submit" class="btn-submit">Recevoir mon estimation gratuite</button>
+        <div class="microcopy">Sans engagement · Vos données ne sont jamais revendues à des fins publicitaires</div>
+      </form>
+
+      <div class="success-state" id="successState">
+        <h3>Dossier bien reçu.</h3>
+        <p>Vous serez contacté(e) sous 24h avec votre estimation détaillée.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="marquee-band">
+    <div class="marquee-track">
+      <span>ITTEVILLE</span>
+      <span>VERT-LE-GRAND</span>
+      <span>VERT-LE-PETIT</span>
+      <span>BALLANCOURT-SUR-ESSONNE</span>
+      <span>LA FERTÉ-ALAIS</span>
+      <span>VAL D'ESSONNE</span>
+      <span>ITTEVILLE</span>
+      <span>VERT-LE-GRAND</span>
+      <span>VERT-LE-PETIT</span>
+      <span>BALLANCOURT-SUR-ESSONNE</span>
+      <span>LA FERTÉ-ALAIS</span>
+      <span>VAL D'ESSONNE</span>
+    </div>
+  </div>
+</section>
+
+<section class="reveal" id="villes">
+  <div class="wrap">
+    <div class="kicker">Mes secteurs</div>
+    <h2 class="section-title">Une estimation dédiée à votre commune</h2>
+    <p style="font-size:14.5px;color:var(--ink-soft);max-width:600px;margin-top:14px;">
+      Je connais chaque secteur en détail — choisissez votre commune pour découvrir son marché immobilier,
+      son patrimoine, et lancer votre estimation gratuite.
+    </p>
+    <div class="villes-grid">
+      <a href="itteville/index.html" class="ville-card">
+        <div class="ville-img" style="background-image:url('itteville/images/itteville-eglise.jpg');"></div>
+        <div class="ville-body">
+          <h3>Itteville</h3>
+          <p>91760 · Val d'Essonne, bords de la Juine, Porte d'En-Haut.</p>
+          <span class="ville-cta">Estimer à Itteville →</span>
+        </div>
+      </a>
+      <a href="vert-le-grand/index.html" class="ville-card">
+        <div class="ville-img" style="background-image:url('vert-le-grand/images/vert-le-grand-chateau-saussaye-aujourdhui.jpg');"></div>
+        <div class="ville-body">
+          <h3>Vert-le-Grand</h3>
+          <p>91810 · Château de Saussaye et centre-bourg.</p>
+          <span class="ville-cta">Estimer à Vert-le-Grand →</span>
+        </div>
+      </a>
+      <a href="vert-le-petit/index.html" class="ville-card">
+        <div class="ville-img" style="background-image:url('vert-le-petit/images/vert-le-petit-eglise.jpg');"></div>
+        <div class="ville-body">
+          <h3>Vert-le-Petit</h3>
+          <p>91710 · Vallée de l'Essonne et étangs.</p>
+          <span class="ville-cta">Estimer à Vert-le-Petit →</span>
+        </div>
+      </a>
+      <a href="ballancourt/index.html" class="ville-card">
+        <div class="ville-img" style="background-image:url('ballancourt/images/ballancourt-chateau-facade.jpg');"></div>
+        <div class="ville-body">
+          <h3>Ballancourt-sur-Essonne</h3>
+          <p>91610 · Château du Saussay classé monument historique.</p>
+          <span class="ville-cta">Estimer à Ballancourt →</span>
+        </div>
+      </a>
+      <a href="ferte-alais/index.html" class="ville-card">
+        <div class="ville-img" style="background-image:url('ferte-alais/images/ferte-alais-hotel-de-ville.jpg');"></div>
+        <div class="ville-body">
+          <h3>La Ferté-Alais</h3>
+          <p>91590 · Église classée et aérodrome historique.</p>
+          <span class="ville-cta">Estimer à La Ferté-Alais →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section-tint reveal" id="conseillere">
+  <div class="wrap conseiller-wrap">
+    <div class="conseiller-photo" style="background-image:url('itteville/images/johanna.jpg');"></div>
+    <div class="conseiller-info">
+      <div class="kicker">Votre interlocutrice</div>
+      <h2 class="section-title" style="margin-bottom:14px;">Johanna Camacho</h2>
+      <p style="font-size:15px;color:var(--ink-soft);max-width:520px;line-height:1.6;">
+        Conseillère immobilière iad France, intervenant à Itteville, Vert-le-Grand, Vert-le-Petit,
+        Ballancourt-sur-Essonne et La Ferté-Alais. Chaque estimation est faite par elle, sur le terrain —
+        pas par un algorithme.
+      </p>
+      <div class="conseiller-liens">
+        <a href="https://www.iadfrance.fr/conseiller-immobilier/johanna.camacho" target="_blank" rel="noopener" class="btn-outline">Voir mon profil iad</a>
+        <a href="https://wa.me/33662239938?text=Bonjour%2C%20je%20souhaite%20une%20estimation%20de%20mon%20bien" target="_blank" rel="noopener" class="btn-whatsapp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0012.04 2m0 1.67c2.2 0 4.26.86 5.82 2.42a8.2 8.2 0 012.41 5.82c0 4.55-3.7 8.24-8.24 8.24a8.2 8.2 0 01-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 01-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24m-4.53 4.73c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.03 0 1.2.87 2.35.99 2.51.12.16 1.7 2.72 4.2 3.7.59.24 1.05.38 1.4.48.59.19 1.13.16 1.55.1.47-.07 1.46-.6 1.67-1.18.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.46-.72-1.68-.8-.23-.09-.39-.13-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.53.06-.24-.12-1.03-.38-1.96-1.2-.72-.65-1.21-1.44-1.35-1.68-.14-.24-.02-.37.11-.5.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.42h-.4z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial">
+  <div class="wrap">
+    <div class="testimonial-carousel" id="testimonialCarousel">
+      <div class="testimonial-slide is-active">
+        <div class="testimonial-stars">★★★★★</div>
+        <blockquote>« Johanna est une vraie professionnelle de l'immobilier. Son implication sans faille est remarquable. Son excellente connaissance du monde de l'immobilier est indéniable. Elle contribue à concrétiser des projets de vie importants avec humanité. »</blockquote>
+        <cite>— MM, mise en vente</cite>
+      </div>
+      <div class="testimonial-slide">
+        <div class="testimonial-stars">★★★★★</div>
+        <blockquote>« Parfait, merci encore. Je recommande fortement Mme Camacho pour ma vente d'appartement. »</blockquote>
+        <cite>— Stéphanie, mise en vente</cite>
+      </div>
+      <div class="testimonial-slide">
+        <div class="testimonial-stars">★★★★★</div>
+        <blockquote>« Un immense merci à Mme Camacho pour son professionnalisme, sa disponibilité et son accompagnement tout au long de la vente de notre bien. Tout a été géré avec sérieux et efficacité. »</blockquote>
+        <cite>— Mme Ortola, mise en vente</cite>
+      </div>
+      <div class="testimonial-slide">
+        <div class="testimonial-stars">★★★★★</div>
+        <blockquote>« Excellente expérience avec Johanna pour la mise en vente de mes murs commerciaux. Elle se distingue par son grand professionnalisme, sa disponibilité et la qualité de son accompagnement. »</blockquote>
+        <cite>— LorieW, mise en vente</cite>
+      </div>
+      <div class="testimonial-slide">
+        <div class="testimonial-stars">★★★★★</div>
+        <blockquote>« Connaît son métier parfaitement, très bonne conseillère pour améliorer la vente du bien. »</blockquote>
+        <cite>— Éric B, mise en vente</cite>
+      </div>
+    </div>
+    <div class="testimonial-dots" id="testimonialDots"></div>
+    <p class="testimonial-note">5/5 sur 45 avis clients vérifiés (Immodvisor) — Johanna Camacho, iad France</p>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="wrap">
+    <h2>Prête à connaître la valeur de votre bien&nbsp;?</h2>
+    <p>Deux minutes suffisent pour lancer votre estimation, quelle que soit votre commune.</p>
+    <button class="btn-final" onclick="document.querySelector('.lead-card').scrollIntoView({behavior:'smooth'}); document.getElementById('adresse').focus();">Démarrer mon estimation</button>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" style="flex-direction:column;gap:6px;align-items:flex-start;">
+    <div style="display:flex;justify-content:space-between;width:100%;flex-wrap:wrap;gap:12px;">
+      <span>Johanna Camacho — iad France · Conseillère immobilière, Val d'Essonne</span>
+      <span><a href="mentions-legales.html">Mentions légales</a> · <a href="mentions-legales.html#confidentialite">Politique de confidentialité</a></span>
+    </div>
+    <p class="footer-zone">
+      Johanna Camacho, conseillère iad France indépendante — RSAC d'Évry n° 847 807 260 —
+      SIRET 847 807 260 00017 — 3 Place Voltaire, 91380 Chilly-Mazarin. iad France SAS, société de courtage
+      immatriculée au RSAC de Versailles n° 511 471 246, carte professionnelle CPI 7501 2016 000 010 388
+      délivrée par la CCI Paris Île-de-France.
+    </p>
+  </div>
+</footer>
+
+<script>
+var LEAD_ENDPOINT_URL = 'https://script.google.com/macros/s/AKfycbwjhpqSEw38TG4D01tIWCal_YMY5VWdb4Po7k67PO8kiGGVlFGACdDSJeEJqnZYSYW_/exec';
+
+document.getElementById('leadForm').addEventListener('submit', function(e){
+  e.preventDefault();
+
+  var leadData = {
+    nom: document.getElementById('nom').value,
+    ville: document.getElementById('ville').value,
+    adresse: document.getElementById('adresse').value,
+    type: document.getElementById('type').value,
+    delai: document.getElementById('delai').value,
+    tel: document.getElementById('tel').value,
+    consent: document.getElementById('consent').checked ? 'Oui' : 'Non',
+    source: document.getElementById('ville').value || 'Page d\'accueil Johanna'
+  };
+
+  if (typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-XXXXXXXXX/REMPLACER'
+    });
+  }
+
+  if (LEAD_ENDPOINT_URL.indexOf('REMPLACER') === -1) {
+    fetch(LEAD_ENDPOINT_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(leadData)
+    }).catch(function(err){
+      console.error('Erreur envoi lead:', err);
+    });
+  } else {
+    console.warn('LEAD_ENDPOINT_URL non configuré — lead non envoyé:', leadData);
+  }
+
+  this.style.display = 'none';
+  document.getElementById('successState').classList.add('active');
+});
+
+(function(){
+  var reveals = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) {
+    reveals.forEach(function(el){ el.classList.add('is-visible'); });
+    return;
+  }
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  reveals.forEach(function(el){ observer.observe(el); });
+})();
+
+(function(){
+  var stats = document.querySelectorAll('.stat .num');
+  stats.forEach(function(el){
+    var text = el.textContent.trim();
+    var match = text.match(/^(\d+)(.*)$/);
+    if (!match) return;
+    var target = parseInt(match[1], 10);
+    var suffix = match[2];
+    var current = 0;
+    var duration = 1000;
+    var stepTime = 30;
+    var steps = duration / stepTime;
+    var increment = target / steps;
+    var timer = setInterval(function(){
+      current += increment;
+      if (current >= target) {
+        el.textContent = target + suffix;
+        clearInterval(timer);
+      } else {
+        el.textContent = Math.floor(current) + suffix;
+      }
+    }, stepTime);
+  });
+})();
+
+(function(){
+  var bar = document.getElementById('stickyCta');
+  var hero = document.querySelector('.hero');
+  if (!bar || !hero) return;
+  var heroBottom = hero.offsetHeight;
+  window.addEventListener('scroll', function(){
+    if (window.scrollY > heroBottom) {
+      bar.classList.add('is-visible');
+    } else {
+      bar.classList.remove('is-visible');
+    }
+  });
+})();
+
+(function(){
+  var slides = document.querySelectorAll('#testimonialCarousel .testimonial-slide');
+  var dotsWrap = document.getElementById('testimonialDots');
+  if (!slides.length || !dotsWrap) return;
+
+  var current = 0;
+
+  slides.forEach(function(_, i){
+    var dot = document.createElement('button');
+    if (i === 0) dot.classList.add('is-active');
+    dot.setAttribute('aria-label', 'Témoignage ' + (i + 1));
+    dot.addEventListener('click', function(){ goTo(i); });
+    dotsWrap.appendChild(dot);
+  });
+  var dots = dotsWrap.querySelectorAll('button');
+
+  function goTo(index){
+    slides[current].classList.remove('is-active');
+    dots[current].classList.remove('is-active');
+    current = index;
+    slides[current].classList.add('is-active');
+    dots[current].classList.add('is-active');
+  }
+
+  if (slides.length > 1) {
+    setInterval(function(){
+      goTo((current + 1) % slides.length);
+    }, 6000);
+  }
+})();
+</script>
+
+<a href="tel:+33662239938" class="call-float" aria-label="Appeler Johanna Camacho">
+  <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.36 11.36 0 003.57.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.57 1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+</a>
+
+<a href="https://wa.me/33662239938?text=Bonjour%2C%20je%20souhaite%20une%20estimation%20de%20mon%20bien" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contacter sur WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0012.04 2m0 1.67c2.2 0 4.26.86 5.82 2.42a8.2 8.2 0 012.41 5.82c0 4.55-3.7 8.24-8.24 8.24a8.2 8.2 0 01-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 01-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24m-4.53 4.73c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.03 0 1.2.87 2.35.99 2.51.12.16 1.7 2.72 4.2 3.7.59.24 1.05.38 1.4.48.59.19 1.13.16 1.55.1.47-.07 1.46-.6 1.67-1.18.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.46-.72-1.68-.8-.23-.09-.39-.13-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.53.06-.24-.12-1.03-.38-1.96-1.2-.72-.65-1.21-1.44-1.35-1.68-.14-.24-.02-.37.11-.5.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.42h-.4z"/></svg>
+</a>
+
+</body>
+</html>
